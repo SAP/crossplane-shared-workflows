@@ -8,13 +8,16 @@ Shared GitHub actions workflows for crossplane providers.
 
 ## Requirements and Setup
 
-*Insert a short description what is required to get your project running...*
+These workflows can be called via workflow call from other workflows in your repo.
+
+For examples, see usage from SAP/crossplane-brovider-btp SAP/crossplane-provider-cloudfoundry or SAP/crossplane-provider-hana.
 
 ## Support, Feedback, Contributing
 
 This project is open to feature requests/suggestions, bug reports etc. via [GitHub issues](https://github.com/SAP/crossplane-shared-workflows/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).
 
 ## Security / Disclosure
+
 If you find any bug that may be a security problem, please follow our instructions at [in our security policy](https://github.com/SAP/crossplane-shared-workflows/security/policy) on how to report it. Please do not create GitHub issues for security-related doubts or problems.
 
 ## Code of Conduct
