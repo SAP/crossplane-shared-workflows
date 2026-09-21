@@ -10,7 +10,7 @@ Shared GitHub actions workflows for crossplane providers.
 
 These workflows can be called via workflow call from other workflows in your repo.
 
-For examples, see usage from SAP/crossplane-brovider-btp SAP/crossplane-provider-cloudfoundry or SAP/crossplane-provider-hana.
+For examples, see usage from [SAP/crossplane-provider-btp](https://github.com/SAP/crossplane-provider-btp), [SAP/crossplane-provider-cloudfoundry](https://github.com/SAP/crossplane-provider-cloudfoundry), or [SAP/crossplane-provider-hana](https://github.com/SAP/crossplane-provider-hana).
 
 ## Support, Feedback, Contributing
 
