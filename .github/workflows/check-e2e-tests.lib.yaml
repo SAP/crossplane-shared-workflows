@@ -57,7 +57,7 @@ concurrency:
 env:
   BUILD_ID: ${{ github.run_number }}-${{ github.run_attempt }} # using shorter run number for BTP character limits
   # hardcoded BTP CLI version
-  BTP_CLI_VERSION: 2.116.2
+  BTP_CLI_VERSION: 2.116.3
   E2E_BUILD_REGISTRY: index.docker.io/e2e
   CROSSPLANE_CLI_VERSION: v2.0.2
   # renovate: datasource=helm depName=crossplane registryUrl=https://charts.crossplane.io/stable versioning=semver allowedVersions=<2.2.0
