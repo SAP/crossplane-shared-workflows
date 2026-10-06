@@ -8,7 +8,7 @@ on:
         description: 'Comma-separated list of allowed SPDX license identifiers'
         required: false
         type: string
-        default: 'Apache-2.0,BSD-3-Clause,MIT,MPL-2.0,ISC,BSD-2-Clause,Unicode-DFS-2016,BSD-0-Clause'
+        default: 'Apache-2.0,BSD-3-Clause,MIT,MPL-2.0,ISC,BSD-2-Clause,Unicode-DFS-2016,BSD-0-Clause,OFL-1.1'
 
 jobs:
   run-go-license-check:
