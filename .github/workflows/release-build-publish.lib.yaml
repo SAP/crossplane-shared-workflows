@@ -116,7 +116,9 @@ jobs:
         VERSION=${{ inputs.version }}
         for GOOS in linux darwin; do
           for GOARCH in amd64 arm64; do
-            GOOS=$GOOS GOARCH=$GOARCH go build \
+            # FIPS 140-3: link Go Cryptographic Module CMVP #5247 in approved
+            # mode, matching the GoReleaser build used for full releases.
+            CGO_ENABLED=0 GOFIPS140=certified GOOS=$GOOS GOARCH=$GOARCH go build \
               -trimpath \
               -o dist/exporter_${VERSION}_${GOOS}_${GOARCH} \
               ./cmd/exporter
