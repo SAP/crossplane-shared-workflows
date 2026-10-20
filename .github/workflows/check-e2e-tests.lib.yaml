@@ -182,7 +182,7 @@ jobs:
           key: ${{ steps.crossplane-chart-cache.outputs.cache-primary-key }}
 
       - name: Upload Crossplane chart
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: crossplane-chart
           path: .cache/charts
@@ -270,7 +270,7 @@ jobs:
         run: docker save "${{ env.E2E_PROVIDER_IMAGE }}" -o provider-image.tar
 
       - name: Upload provider image
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: provider-image
           path: provider-image.tar
@@ -279,7 +279,7 @@ jobs:
           if-no-files-found: error
 
       - name: Upload provider xpkg
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: provider-xpkg
           path: _output/xpkg
@@ -288,7 +288,7 @@ jobs:
           if-no-files-found: error
 
       - name: Upload CLI tools
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: e2e-tools
           path: .cache/tools
@@ -430,7 +430,7 @@ jobs:
 
       - name: Upload test logs
         if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: e2e-logs-${{ matrix.testName }}-attempt-${{ github.run_attempt }}
           path: |
